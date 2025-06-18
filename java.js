@@ -1,18 +1,3 @@
-function getComputerChoice(){
-  let pick = ["rock", "paper", "scissors"];
-  
-  return pick[Math.floor(Math.random() * pick.length)];
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
-
-console.log(getComputerChoice())
-
-function getHumanChoice(){
-    return prompt("pick yours");
-}
-
-console.log(getHumanChoice())
-
-
-let humanScore = 0;
-let computerScore = 0;
-
