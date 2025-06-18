@@ -16,3 +16,26 @@ function getComputerChoice(){
 }
 
 console.log(getComputerChoice())
+
+function getHumanChoice(){
+  let human = prompt("What's yours?");
+  return human;
+}
+
+console.log(getHumanChoice())
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice){
+
+  
+
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+
+playRound(humanSelection, computerSelection);
+
