@@ -18,7 +18,7 @@ function getComputerChoice(){
 console.log(getComputerChoice())
 
 function getHumanChoice(){
-  let human = prompt("What's yours?");
+  const human = prompt("What's yours?");
   return human;
 }
 
@@ -29,13 +29,26 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice){
 
-  
 
+
+    if (humanSelection == "rock" && computerSelection == "scissors"){
+      console.log('you win');
+    } else if (humanSelection == "paper" && computerSelection == "rock"){
+      console.log('you win')
+    } else if (humanSelection == "scissors" && computerSelection == "paper"){
+      console.log('win');
+    } else if (humanSelection == "rock" && computerSelection == "paper"){
+      console.log('you lose');
+    } else if (humanSelection == "paper" && computerSelection == "scissors"){
+      console.log('you lose')
+    } else if (humanSelection == "scissors" && computerSelection == "rock"){
+      console.log('lose');
+    } else {
+      console.log('tie, try again');
+    }
 }
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-
 playRound(humanSelection, computerSelection);
-
