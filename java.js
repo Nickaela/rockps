@@ -1,34 +1,16 @@
 function getComputerChoice(){
   const pcChoice = Math.floor(Math.random() * 3);
   if (pcChoice === 0){
-    console.log("rock");
+    return "rock";
   } else if (pcChoice === 1){
-    console.log("paper");
+    return "paper";
   } else {
-    console.log("scissors");
+    return "scissors";
   }
 }
 
 function getHumanChoice(){
-  const hoomanChoice = prompt("Which one do you pick?, Rock, Paper or Scissors?");
-  console.log(hoomanChoice);
+ const hooman = prompt("Which one do you pick?, Rock, Paper or Scissors?");
+ return hooman;
 }
 
-let humanScore = 0;
-let computerScore = 0;
-
-
-function playRound(humanChoice, computerChoice){
-  
-  if (humanChoice === 'rock' && computerChoice === 'scissors'){
-    console.log('You win, rock beats scissors');
-  } else {
-    console.log('try again');
-  }
-
-}
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
