@@ -18,6 +18,11 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
+  
+  humanChoice = humanChoice.toUpperCase();
+  humanChoice = humanChoice.toLowerCase();
+
+
   if (humanChoice === 'rock' && computerChoice === 'scissors'){
     console.log('you WIN, rock beats scissors');
     humanScore++;
