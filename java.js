@@ -9,14 +9,10 @@ function getComputerChoice(){
   }
 }
 
-console.log(getComputerChoice());
-
 function getHumanChoice(){
  const hooman = prompt("Which one do you pick?, Rock, Paper or Scissors?");
  return hooman;
 }
-
-console.log(getHumanChoice());
 
 let humanScore = 0;
 let computerScore = 0;
@@ -46,7 +42,9 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
-//my own version of playRound function
-// playRound(getHumanChoice(), getComputerChoice());
-// console.log(computerScore)
-// console.log(humanScore)
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+
+playRound(humanSelection, computerSelection);
+
