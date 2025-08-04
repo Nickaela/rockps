@@ -30,36 +30,36 @@ function playRound(humanChoice, computerChoice) {
   if (humanChoice === 'rock' && computerChoice === 'scissors'){
     console.log('you WIN, rock beats scissors');
     humanScore++;
-    console.log(++game);
+    ++game;
     gameWinner();
   } else if (humanChoice === 'rock' && computerChoice === 'paper'){
     console.log('you LOSE, paper beats rock');
     computerScore++;
-    console.log(++game);
+    ++game;
     gameWinner();
   } else if (humanChoice === 'paper' && computerChoice === 'rock'){
     console.log('you WIN, paper beats rock');
     humanScore++;
-    console.log(++game);;
+    ++game;
     gameWinner();
   } else if (humanChoice === 'paper' && computerChoice === 'scissors'){
     console.log('you LOSE, scissors beats paper');
     computerScore++;
-    console.log(++game);
+    ++game;
     gameWinner();
   } else if (humanChoice === 'scissors' && computerChoice === 'paper'){
     console.log('you WIN, scissors beats paper');
     humanScore++;
-    console.log(++game);
+    ++game;
     gameWinner();
   } else if (humanChoice === 'scissors' && computerChoice === 'rock'){
     console.log('you LOSE, rock beats scissors');
     computerScore++;
-    console.log(++game);
+    ++game;
     gameWinner();
   } else {
     console.log('its a tie');
-    console.log(++game);
+    ++game;
     gameWinner();
   }
 }
@@ -82,7 +82,7 @@ function gameWinner(){
     } else {
       console.log('NO WINNER');
     }
-    
+
     } else {
       playRound(a, b);
     }
